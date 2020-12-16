@@ -1,23 +1,31 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="logos/87252868_1534455776707839_1178978177838481408_o.jpg">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!------ Include the above in your HEAD tag ---------->
-        
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
-    <title>Coding World!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700"
+        rel="stylesheet">
+
+        <title>Coding World - Welcome to our blog, you can learn anything related to coding</title>
 </head>
+<div class="alert alert-danger alert-dismissible mb-0" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
+    <strong>
+      
+        Error: 
+      
+    </strong>
+    Please login to send a contact message
+  </div>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -31,12 +39,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="blog.html">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
-
+                   
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,71 +96,90 @@
                         <a class="nav-link active" href="contact.html">Contact us</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">Search</button>
-                </form>
-                <div class="mx-2">
+                <div class="my-1 mx-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signinModal">Login</button>
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
-
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="contact pt-100 pb-100" id="contact">
-        <div class="container">
-           <div class="row">
-              <div class="col-xl-6 mx-auto text-center">
-                 <div class="section-title mb-100">
-                    <p>get in touch</p>
-                    <h4>contact us</h4>
-                 </div>
-              </div>
-           </div>
-           <div class="row text-center">
-                 <div class="col-md-8">
-                    <form action="#" class="contact-form">
-                       <div class="row">
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="name">
-                          </div>
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="email">
-                          </div>
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="subject">
-                          </div>
-                          <div class="col-xl-6">
-                             <input type="text" placeholder="telephone">
-                          </div>
-                          <div class="col-xl-12">
-                             <textarea placeholder="message" cols="30" rows="10"></textarea>
-                             <input type="submit" value="send message">
-                          </div>
-                       </div>
-                    </form>
-                 </div>
-                 <div class="col-md-4">
-                    <div class="single-contact">
-                       <i class="fa fa-map-marker"></i>
-                       <h5>Address</h5>
-                       <p>Office-411, 04th Floor, EDEN Tower, Gulberg-3, Lahore</p>
+
+    <div class="main-container container-fluid my-4">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-2">
+
+                <!-- THE CONTACT FORM IS HERE -->
+                <h2>Contact me!</h2>
+                <form action="contact.html" method="post"><input type="hidden" name="csrfmiddlewaretoken"
+                        value="hMbfkg53TuAV9KPDimV8Y7eXLq6XdtxTMiZ3sdqMvz8suhdT5eRA8dc8nrdjogl5">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter your Name" name="name">
                     </div>
-                    <div class="single-contact">
-                       <i class="fa fa-phone"></i>
-                       <h5>Phone</h5>
-                       <p>+9320-0467586</p>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="cemail" placeholder="Enter your Email"
+                            name="email">
                     </div>
-                    <div class="single-contact">
-                       <i class="fa fa-envelope"></i>
-                       <h5>Email</h5>
-                       <p>hamza.butt@tsorbit.com</p>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number (with country code)</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your Phone Number"
+                            name="phone">
                     </div>
-                 </div>
-           </div>
+                    <div class="form-group">
+                        <label for="description">Describe why you want to contact me for here</label>
+                        <textarea type="text" class="form-control" id="message" placeholder="Your message"
+                            name="message"></textarea>
+                    </div>
+                    <!-- <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m">
+                        <div style="width: 304px; height: 78px;">
+                            <div><iframe
+                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m&amp;co=aHR0cHM6Ly93d3cuY29kZXdpdGhoYXJyeS5jb206NDQz&amp;hl=en&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;size=normal&amp;cb=o8giqdwvzmmb"
+                                    width="304" height="78" role="presentation" name="a-xxosx7btc0lb" frameborder="0"
+                                    scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                            </div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response"
+                                class="g-recaptcha-response"
+                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                        </div><iframe style="display: none;"></iframe>
+                    </div> -->
+
+                    <button type="submit" class="btn btn-danger mt-2" disabled="">Submit</button>
+                </form>
+<hr>
+            </div>
+            <hr>
+
+            <!-- SIDE WIDGET IS HERE -->
+            <div class="col-md-4">
+                <div class="col-md-8">
+                    <div class="my-4">
+                        <form action="/search" method="get">
+                            <br>
+                            <h4>Search</h4>
+                            <div>
+                                <input type="text" name="query" class="form-control">
+                                <button type="submit" class="btn btn-danger mt-2 ">Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="my-4">
+                        <h4>Subscribe To My YouTube Channels</h4>
+                        <div class="my-2">
+                            <div class="my-3">
+
+
+                                <div class="g-ytsubscribe" data-channelid="UCRoTR3X0Qaes7n704AO5Qbw" data-layout="full"
+                                    data-count="default"></div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
     <!-- Sign in Modal -->
     <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -198,31 +225,53 @@
                 <div class="modal-body">
                     <form>
                         <img class="mb-4 center" src="bootstrap-logo.svg" alt="" width="72" height="57">
-                        <h1 class="h3 mb-3 fw-normal">Please enter your details</h1>
-                        <label for="inputEmail" class="visually-hidden">Email address</label>
+                        <br> <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          <input type="text" class="form-control" placeholder="Enter Username" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your First Name"
+                                name="fname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name"
+                                name="lname">
+                        </div>
+
+                        <label for="inputEmail">Email address</label>
                         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
                             autofocus="">
-                        <label for="inputPassword" class="visually-hidden">Password</label>
+
+                         <label for="inputPassword">Password</label>
                         <input type="password" id="inputPassword" class="form-control" placeholder="Password"
                             required="">
-                        <label for="inputcPassword" class="visually-hidden">Confirm Password</label>
+                        <label for="inputcPassword">Confirm Password</label>
                         <input type="password" id="inputcPassword" class="form-control" placeholder="Confirm Password"
                             required="">
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                        <p class="mt-5 mb-3 text-muted">© 2018-2020</p>
+                        <br><button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                        <p class="mt-5 mb-3 text-muted">© 2020-2022</p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-
+        <script src="https://apis.google.com/js/platform.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
@@ -241,131 +290,3 @@
 </footer>
 
 </html>
-<style>
-.pb-100 {
-	padding-bottom: 100px;
-}
-.pt-100 {
-	padding-top: 100px;
-}
-.mb-100 {
-	margin-bottom: 100px;
-}
-a {
-	text-decoration: none;
-	color: #333;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
-.section-title {
-	position: relative;
-}
-.section-title p {
-	font-size: 16px;
-	margin-bottom: 5px;
-	font-weight: 400;
-}
-.section-title h4 {
-	font-size: 40px;
-	font-weight: 600;
-	text-transform: capitalize;
-	position: relative;
-	padding-bottom: 20px;
-	display: inline-block;
-}
-.section-title h4::before {
-	position: absolute;
-	content: "";
-	width: 80px;
-	height: 2px;
-	background-color: #d8d8d8;
-	bottom: 0;
-	left: 50%;
-	margin-left: -40px;
-}
-.section-title h4::after {
-	position: absolute;
-	content: "";
-	width: 50px;
-	height: 2px;
-	background-color: #FF7200;
-	left: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -25px;
-}
-.contact {
-	background-image: url("http://infinityflamesoft.com/html/abal-preview/assets/img/contact_back.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	position: relative;
-	z-index: 2;
-	color: #fff;
-}
-.contact-form input,
-textarea {
-	width: 100%;
-	border: 1px solid #555;
-	padding: 5px 10px;
-	text-transform: capitalize;
-	margin-top: 15px;
-	background-color: transparent;
-	color: #fff;
-}
-.contact:before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-color: #333;
-	z-index: -1;
-	opacity: .85;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-}
-.single-contact {
-	text-align: left;
-	position: relative;
-	padding-left: 70px;
-	margin-bottom: 50px;
-	margin-top: 10px;
-}
-.single-contact i.fa {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
-	background-color: ;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	border-radius: 3px;
-}
-.single-contact h5 {
-	font-size: 18px;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-.single-contact p {
-	font-size: 15px;
-	font-weight: 400;
-}
-.contact-form input[type="submit"] {
-	background-color: #FF7200;
-	border: 0px;
-	cursor: pointer;
-	font-size: 16px;
-	-webkit-transition: .4s;
-	transition: .4s
-}
-.contact-form input[type="submit"]:hover {
-	background-color: #CC5B00
-}
-.contact-form input:focus, textarea:focus {
-	border-color: #CC5B00
-}
-</style>
