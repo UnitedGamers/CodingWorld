@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Coding World</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active aria-current="page href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -86,15 +86,15 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-secondary" type="submit">Search</button>
                 </form>
-                <div class="mx-2">
+                <div class="my-1 mx-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signinModal">Login</button>
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
-
                 </div>
             </div>
         </div>
-    </nav>
-
+    </nav>>
+    
+    
 
     <!-- Sign in Modal -->
     <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
@@ -109,11 +109,10 @@
                     <div class="container">
                         <form>
                             <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
-
-                            <br><label for="inputEmail" class="visually-hidden">Email address</label>
+                            <br><label for="inputEmail">Email address</label>
                             <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
                                 required="" autofocus="">
-                            <br> <label for="inputPassword" class="visually-hidden">Password</label>
+                            <br> <label for="inputPassword">Password</label>
                             <input type="password" id="inputPassword" class="form-control" placeholder="Password"
                                 required="">
                             <br>
@@ -212,17 +211,23 @@
                 <div class="modal-body">
                     <form>
                         <img class="mb-4 center" src="bootstrap-logo.svg" alt="" width="72" height="57">
-                        <br> <label for="uname">Username:</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter your username" name="uname">
+                        <br> <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          <input type="text" class="form-control" placeholder="Enter Username" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
 
 
                         <div class="form-group">
-                            <label for="name">First Name</label>
+                            <label for="fname">First Name</label>
                             <input type="text" class="form-control" id="fname" placeholder="Enter your First Name"
                                 name="fname">
                         </div>
                         <div class="form-group">
-                            <label for="name">Last Name</label>
+                            <label for="lname">Last Name</label>
                             <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name"
                                 name="lname">
                         </div>
@@ -238,7 +243,7 @@
                         <input type="password" id="inputcPassword" class="form-control" placeholder="Confirm Password"
                             required="">
                         <br><button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                        <p class="mt-5 mb-3 text-muted">© 2018-2020</p>
+                        <p class="mt-5 mb-3 text-muted">© 2020-2022</p>
                     </form>
                 </div>
             </div>
@@ -396,7 +401,6 @@
     .typed-cursor.typed-cursor--blink {
         animation: typedjsBlink 0.7s infinite;
         -webkit-animation: typedjsBlink 0.7s infinite;
-        animation: typedjsBlink 0.7s infinite;
     }
 
     @keyframes typedjsBlink {
@@ -424,7 +428,7 @@
     window.onload = function () {
         console.log("loaded")
         var typed = new Typed('#typed', {
-            strings: ["Welcome to Coding World!", "Learn Python", "Web development", "Data Science", "Machine Learning", "Learn PHP", "Learn Javascript", "Learn Wordpress", "and other awesome programming concepts with me :)"],
+            strings: ["Welcome to Coding World!", "Learn Python", "Web development", "Data Science", "Machine Learning", "Learn PHP", "Learn Javascript", "Learn Wordpress", "Learn Laravel", "Learn Cool Tricks!"],
             backSpeed: 15,
             smartBackspace: true,
             backDelay: 1200,
