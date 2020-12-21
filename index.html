@@ -108,7 +108,7 @@
                 <div class="modal-body">
                     <div class="container">
                         <form>
-                            <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
+                            <img class="mb-4" src="logos/bootstrap-logo.svg" alt="" width="72" height="57">
                             <br><label for="inputEmail">Email address</label>
                             <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
                                 required="" autofocus="">
@@ -209,12 +209,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <img class="mb-4 center" src="bootstrap-logo.svg" alt="" width="72" height="57">
+                    <form action="dbconnect.php" method="POST">
+                        <img class="mb-4 center" src="logos/bootstrap-logo.svg" alt="" width="72" height="57">
+                        
                         <br> <label for="validationCustomUsername" class="form-label">Username</label>
                         <div class="input-group has-validation">
                           <span class="input-group-text" id="inputGroupPrepend">@</span>
-                          <input type="text" class="form-control" placeholder="Enter Username" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <input type="text" class="form-control" placeholder="Enter Username" name="username" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                           <div class="invalid-feedback">
                             Please choose a username.
                           </div>
@@ -233,14 +234,14 @@
                         </div>
 
                         <label for="inputEmail">Email address</label>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                        <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address" required=""
                             autofocus="">
 
                          <label for="inputPassword">Password</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password"
                             required="">
                         <label for="inputcPassword">Confirm Password</label>
-                        <input type="password" id="inputcPassword" class="form-control" placeholder="Confirm Password"
+                        <input type="password" id="inputcPassword" name="cpassword" class="form-control" placeholder="Confirm Password"
                             required="">
                         <br><button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
                         <p class="mt-5 mb-3 text-muted">© 2020-2022</p>
@@ -253,7 +254,7 @@
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="photo-1516116412344-6663387e8590.jpg" class="d-block w-100" alt="...">
+                <img src="logos/photo-1516116412344-6663387e8590.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Coding world!</h5>
                     <p>Here you can learn all basic things to start making your own website</p>
@@ -263,16 +264,16 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="photo-1526374965328-7f61d4dc18c5.jpg" class="d-block w-100" alt="...">
+                <img src="logos/photo-1526374965328-7f61d4dc18c5.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Coding world!</h5>
-                    <p>Here you can learn all basic things to start making your own website</p>
+                    <p>Here you clogos/an learn all basic things to start making your own website</p>
                     <button type="button" class="btn btn-danger"><a style="text-decoration: none;color: white;"
                             href="about.html">About us</a></button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="photo-1542831371-32f555c86880.jpg" class="d-block w-100" alt="...">
+                <img src="logos/photo-1542831371-32f555c86880.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Coding world!</h5>
                     <p>Here you can learn all basic things to start making your own website</p>
@@ -282,7 +283,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="photo-1600267165477-6d4cc741b379.jpg" class="d-block w-100" alt="...">
+                <img src="logos/photo-1600267165477-6d4cc741b379.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Coding world!</h5>
                     <p>Here you can learn all basic things to start making your own website</p>
@@ -291,7 +292,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="photo-1606159068539-43f36b99d1b2.jpg" class="d-block w-100" alt="...">
+                <img src="logos/photo-1606159068539-43f36b99d1b2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Coding world!</h5>
                     <p>Here you can learn all basic things to start making your own website</p>
@@ -332,7 +333,7 @@
     <div class="container">
         <div class="row">
             <div class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;">
-                <img src="videolectures.jpg" class="padded card-img-top" alt="...">
+                <img src="logos/videolectures.jpg" class="padded card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Free Video Courses</h5>
                     <p class="card-text text-center">Get your programming career started with these free video courses.
@@ -343,7 +344,7 @@
             </div>
 
             <div class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;">
-                <img src="codingarticles.jpg" class="padded card-img-top" alt="...">
+                <img src="logos/codingarticles.jpg" class="padded card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Coding Articles</h5>
                     <p class="card-text text-center">Some of the latest coding information compiled as coding articles.
@@ -354,7 +355,7 @@
             </div>
 
             <div class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;">
-                <img src="contactme.jpg" class="padded card-img-top" alt="...">
+                <img src="logos/contactme.jpg" class="padded card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Contact Me</h5>
                     <p class="card-text text-center">Learn programming from our free courses. Examples are available
